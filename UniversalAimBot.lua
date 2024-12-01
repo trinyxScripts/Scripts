@@ -7,6 +7,7 @@ local camera = workspace.CurrentCamera
 local ESPStatus = false
 local aimbot = false
 
+
 function getClosestPlayer()
 local closest = nil
 local maxDistance = math.huge
@@ -45,7 +46,7 @@ Icon = "rbxassetid://122341342375300"
 
 local Tab1 = GUI:Tab{
     Name = "Other",
-    Icon = "rbxassetid://3926305904"
+    Icon = "rbxassetid://83262328821985"
 }
 
 local Tab3 = GUI:Tab{
@@ -59,14 +60,8 @@ Tab3:Button{
 	Name = "CLICK HERE",
 	Description = nil,
 	Callback = function()
-    local invite = "https://tinyurl.com/mr2xzyvy"
-    setclipboard(invite)
-    game:GetService("StarterGui"):SetCore("SendNotification", {
-    Title = "Copied!",
-    Text = "LINK COPIED TO CLIPBOARD",
-    Duration = 3
-})
-end
+        game.Players.LocalPlayer:kick("you actually\nBelieved this No free robux for you LOl")
+    end
 }
 
 
@@ -79,25 +74,18 @@ aimbot = state
 end
 }
 
-GUI:Notification{
-Title = "Script Loaded",
-Text = "Aimbot ready to use",
-Duration = 3,
-Callback = function() end
-}
+
+local Color = Color3.new(1,0,0)
 
 local function ESP()
     if ESPStatus then
-        -- enable ESP and update it
         for _, player in pairs(game.Players:GetPlayers()) do
-                -- create ESP highlight
                 local highlight = Instance.new("Highlight")
                 highlight.Parent = player.Character
-                highlight.FillColor = Color3.new(1, 0, 0)
+                highlight.FillColor = Color
                 highlight.OutlineColor = Color3.new(1, 1, 1)           
         end
     else
-        -- disable ESP
         for _, player in pairs(game.Players:GetPlayers()) do
             if player.Character then
                 local highlight = player.Character:FindFirstChild("Highlight")
@@ -107,6 +95,25 @@ local function ESP()
     end
 end
 
+local function UpdateESPColor()
+    ESPStatus = not ESPStatus
+    ESP()
+    ESPStatus = not ESPStatus
+    ESP()
+end
+
+
+Tab:ColorPicker{
+    Name = "ESP Color",
+	Style = Mercury.ColorPickerStyles.Legacy,
+	Callback = function(color)
+        Color = color
+        UpdateESPColor()
+    end
+}
+
+
+
 Tab:Toggle{
     Name = "ESP",
     StartingState = false,
@@ -114,6 +121,72 @@ Tab:Toggle{
     Callback = function(state)
         ESPStatus = state
         ESP()
+    end
+}
+local Wallhacks = false
+local OriginalProps = {}
+
+function WallHack()
+if Wallhacks then
+for _, v in pairs(workspace:GetDescendants()) do
+if v:IsA("BasePart") and not v.Parent:FindFirstChild("Humanoid") then
+if not OriginalProps[v] then
+OriginalProps[v] = {Color = v.Color, Transparency = v.Transparency}
+end
+v.Transparency = 0.3
+v.Color = Color3.new(1, 1, 1)
+end
+end
+else
+for v, props in pairs(OriginalProps) do
+if v:IsA("BasePart") then
+v.Transparency = props.Transparency
+v.Color = props.Color
+end
+end
+OriginalProps = {}
+end
+end
+
+
+local triggerBotEnabled = false
+
+Tab:Toggle{
+    Name = "Trigger Bot",
+    StartingState = false,
+    Description = nil,
+    Callback = function(state)
+        triggerBotEnabled = state
+    end
+}
+
+local UserInputService = game:GetService("UserInputService")
+local Players = game:GetService("Players")
+local LocalPlayer = Players.LocalPlayer
+local Mouse = LocalPlayer:GetMouse()
+
+local function triggerBot()
+    if not triggerBotEnabled then return end
+    local target = Mouse.Target
+    if target and target.Parent and target.Parent:FindFirstChild("Humanoid") then
+        local player = Players:GetPlayerFromCharacter(target.Parent)
+        if player and player ~= LocalPlayer then
+            mouse1press()
+            task.wait(0.1)
+            mouse1release()
+        end
+    end
+end
+
+game:GetService("RunService").RenderStepped:Connect(triggerBot)
+
+Tab:Toggle{
+    Name = "Transparent Walls",
+    StartingState = false,
+    Description =nil,
+    Callback = function(state)
+        Wallhacks = state
+        WallHack()
     end
 }
 
@@ -135,7 +208,7 @@ Tab1:Button{
 GUI:Prompt{
         Followup = false,
         Title = "Beta",
-        Text = "This Script Is In Beta I will rape you if you steal it",
+        Text = "This Script Is In Beta too LOL",
     }
     
     GUI:Credit{
