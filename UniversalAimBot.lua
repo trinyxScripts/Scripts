@@ -23,7 +23,7 @@ end
 return closest
 end
 
-runService.RenderStepped:Connect(function()
+runService.Heartbeat:Connect(function()
 if aimbot then
 local target = getClosestPlayer()
 if target and target.Character and target.Character:FindFirstChild("Head") then
