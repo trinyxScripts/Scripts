@@ -84,9 +84,9 @@ G2L["a"]["BorderSizePixel"] = 0;
 G2L["a"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["a"]["ZIndex"] = 2;
 G2L["a"]["Image"] = [[http://www.roblox.com/asset/?id=9666257391]];
-G2L["a"]["Size"] = UDim2.new(0, 100, 0, 100);
+G2L["a"]["Size"] = UDim2.new(0.1, 0, 0.2, 0);
 G2L["a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["a"]["Position"] = UDim2.new(0.37663, 0, 0.16123, 0);
+G2L["a"]["Position"] = UDim2.new(0.26924, 0, 0.16123, 0);
 
 
 -- StarterGui.ScreenGui.Frame.all.main.ImageButton.UICorner
@@ -111,7 +111,7 @@ G2L["e"]["BorderSizePixel"] = 0;
 G2L["e"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["e"]["ZIndex"] = 2;
 G2L["e"]["Image"] = [[rbxassetid://18931838023]];
-G2L["e"]["Size"] = UDim2.new(0, 100, 0, 100);
+G2L["e"]["Size"] = UDim2.new(0.1, 0, 0.2, 0);
 G2L["e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["e"]["Position"] = UDim2.new(0.07127, 0, 0.16123, 0);
 
@@ -138,9 +138,9 @@ G2L["12"]["BorderSizePixel"] = 0;
 G2L["12"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["12"]["ZIndex"] = 2;
 G2L["12"]["Image"] = [[http://www.roblox.com/asset/?id=106990690333717]];
-G2L["12"]["Size"] = UDim2.new(0, 100, 0, 100);
+G2L["12"]["Size"] = UDim2.new(0.1, 0, 0.2, 0);
 G2L["12"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["12"]["Position"] = UDim2.new(0.38133, 0, 0.66656, 0);
+G2L["12"]["Position"] = UDim2.new(0.73929, 0, 0.23716, 0);
 
 
 -- StarterGui.ScreenGui.Frame.all.main.ImageButton.UICorner
@@ -165,9 +165,9 @@ G2L["16"]["BorderSizePixel"] = 0;
 G2L["16"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["16"]["ZIndex"] = 2;
 G2L["16"]["Image"] = [[rbxassetid://15464140412]];
-G2L["16"]["Size"] = UDim2.new(0, 100, 0, 100);
+G2L["16"]["Size"] = UDim2.new(0.1, 0, 0.2, 0);
 G2L["16"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["16"]["Position"] = UDim2.new(0.67764, 0, 0.16123, 0);
+G2L["16"]["Position"] = UDim2.new(0.49866, 0, 0.20864, 0);
 
 
 -- StarterGui.ScreenGui.Frame.all.main.ImageButton.UICorner
@@ -196,10 +196,10 @@ G2L["1a"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["1a"]["TextSize"] = 14;
 G2L["1a"]["FontFace"] = Font.new([[rbxasset://fonts/families/GothamSSm.json]], Enum.FontWeight.Heavy, Enum.FontStyle.Italic);
 G2L["1a"]["TextColor3"] = Color3.fromRGB(255, 0, 5);
-G2L["1a"]["Size"] = UDim2.new(0, 200, 0, 50);
+G2L["1a"]["Size"] = UDim2.new(0.2, 0, 0.1, 0);
 G2L["1a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["1a"]["Text"] = [[Shadah]];
-G2L["1a"]["Position"] = UDim2.new(-0.00125, 0, -0.00218, 0);
+G2L["1a"]["Position"] = UDim2.new(0.04171, 0, 0.01363, 0);
 
 
 -- StarterGui.ScreenGui.Frame.all.main.TextLabel
@@ -212,10 +212,10 @@ G2L["1b"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["1b"]["TextSize"] = 14;
 G2L["1b"]["FontFace"] = Font.new([[rbxasset://fonts/families/GothamSSm.json]], Enum.FontWeight.Heavy, Enum.FontStyle.Italic);
 G2L["1b"]["TextColor3"] = Color3.fromRGB(255, 0, 5);
-G2L["1b"]["Size"] = UDim2.new(0, 200, 0, 50);
+G2L["1b"]["Size"] = UDim2.new(0.2, 0, 0.1, 0);
 G2L["1b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["1b"]["Text"] = [[I HAVE NOTING]];
-G2L["1b"]["Position"] = UDim2.new(0.30881, 0, 0.50315, 0);
+G2L["1b"]["Position"] = UDim2.new(0.70686, 0, 0.0922, 0);
 
 
 -- StarterGui.ScreenGui.Frame.all.main.TextLabel
@@ -228,10 +228,10 @@ G2L["1c"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["1c"]["TextSize"] = 14;
 G2L["1c"]["FontFace"] = Font.new([[rbxasset://fonts/families/GothamSSm.json]], Enum.FontWeight.Heavy, Enum.FontStyle.Italic);
 G2L["1c"]["TextColor3"] = Color3.fromRGB(255, 0, 5);
-G2L["1c"]["Size"] = UDim2.new(0, 200, 0, 50);
+G2L["1c"]["Size"] = UDim2.new(0.2, 0, 0.1, 0);
 G2L["1c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["1c"]["Text"] = [[Zium]];
-G2L["1c"]["Position"] = UDim2.new(0.30411, 0, -0.00218, 0);
+G2L["1c"]["Position"] = UDim2.new(0.25829, 0, 0.01363, 0);
 
 
 -- StarterGui.ScreenGui.Frame.all.main.TextLabel
@@ -244,10 +244,10 @@ G2L["1d"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["1d"]["TextSize"] = 14;
 G2L["1d"]["FontFace"] = Font.new([[rbxasset://fonts/families/GothamSSm.json]], Enum.FontWeight.Heavy, Enum.FontStyle.Italic);
 G2L["1d"]["TextColor3"] = Color3.fromRGB(255, 0, 5);
-G2L["1d"]["Size"] = UDim2.new(0, 200, 0, 50);
+G2L["1d"]["Size"] = UDim2.new(0.2, 0, 0.1, 0);
 G2L["1d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["1d"]["Text"] = [[Chickan]];
-G2L["1d"]["Position"] = UDim2.new(0.60512, 0, -0.00218, 0);
+G2L["1d"]["Position"] = UDim2.new(0.47196, 0, 0.06104, 0);
 
 
 -- StarterGui.ScreenGui.Frame.all.main.Frame
