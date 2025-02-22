@@ -7,7 +7,7 @@
  Y888P  ~Y8888P' Y888888P      888888D      Y88888P ~Y8888P' YP   YP  CONVERTER 
 ]=]
 
--- Instances: 32 | Scripts: 5 | Modules: 0 | Tags: 0
+-- Instances: 31 | Scripts: 5 | Modules: 0 | Tags: 0
 local G2L = {};
 
 -- StarterGui.ScreenGui
@@ -19,222 +19,224 @@ G2L["1"]["ZIndexBehavior"] = Enum.ZIndexBehavior.Sibling;
 G2L["2"] = Instance.new("Frame", G2L["1"]);
 G2L["2"]["BorderSizePixel"] = 0;
 G2L["2"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["2"]["Size"] = UDim2.new(0, 691, 0, 382);
-G2L["2"]["Position"] = UDim2.new(0.35276, 0, 0.343, 0);
+G2L["2"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
+G2L["2"]["Size"] = UDim2.new(0.4, 0, 0.4, 0);
+G2L["2"]["Position"] = UDim2.new(0.5, 0, 0.5, 0);
 G2L["2"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["2"]["BackgroundTransparency"] = 1;
 
 
--- StarterGui.ScreenGui.Frame.Frame
+-- StarterGui.ScreenGui.Frame.all
 G2L["3"] = Instance.new("Frame", G2L["2"]);
 G2L["3"]["BorderSizePixel"] = 0;
-G2L["3"]["BackgroundColor3"] = Color3.fromRGB(0, 255, 0);
-G2L["3"]["Size"] = UDim2.new(0, 168, 0, 156);
-G2L["3"]["Position"] = UDim2.new(0.58186, 0, 0.48841, 0);
+G2L["3"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["3"]["Size"] = UDim2.new(1, 0, 1, 0);
 G2L["3"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["3"]["Name"] = [[all]];
+G2L["3"]["BackgroundTransparency"] = 1;
 
 
--- StarterGui.ScreenGui.Frame.Frame.UIStroke
-G2L["4"] = Instance.new("UIStroke", G2L["3"]);
-G2L["4"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
-G2L["4"]["Thickness"] = 10;
-G2L["4"]["Color"] = Color3.fromRGB(255, 0, 5);
+-- StarterGui.ScreenGui.Frame.all.LocalScript
+G2L["4"] = Instance.new("LocalScript", G2L["3"]);
 
 
--- StarterGui.ScreenGui.Frame.Frame
-G2L["5"] = Instance.new("Frame", G2L["2"]);
+
+-- StarterGui.ScreenGui.Frame.all.drag
+G2L["5"] = Instance.new("Frame", G2L["3"]);
 G2L["5"]["BorderSizePixel"] = 0;
-G2L["5"]["BackgroundColor3"] = Color3.fromRGB(0, 255, 0);
-G2L["5"]["Size"] = UDim2.new(0, 168, 0, 156);
-G2L["5"]["Position"] = UDim2.new(0.36326, 0, 0.38116, 0);
+G2L["5"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["5"]["AnchorPoint"] = Vector2.new(0.5, 1);
+G2L["5"]["Size"] = UDim2.new(0, 180, 0, 10);
+G2L["5"]["Position"] = UDim2.new(0.17438, 0, 0.76702, 0);
 G2L["5"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["5"]["Name"] = [[drag]];
 
 
--- StarterGui.ScreenGui.Frame.Frame.UIStroke
-G2L["6"] = Instance.new("UIStroke", G2L["5"]);
-G2L["6"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
-G2L["6"]["Thickness"] = 10;
-G2L["6"]["Color"] = Color3.fromRGB(255, 0, 5);
+-- StarterGui.ScreenGui.Frame.all.drag.UICorner
+G2L["6"] = Instance.new("UICorner", G2L["5"]);
+G2L["6"]["CornerRadius"] = UDim.new(1, 0);
 
 
--- StarterGui.ScreenGui.Frame.LocalScript
-G2L["7"] = Instance.new("LocalScript", G2L["2"]);
+-- StarterGui.ScreenGui.Frame.all.main
+G2L["7"] = Instance.new("Frame", G2L["3"]);
+G2L["7"]["BorderSizePixel"] = 0;
+G2L["7"]["BackgroundColor3"] = Color3.fromRGB(0, 255, 0);
+G2L["7"]["Size"] = UDim2.new(0, 638, 0, 267);
+G2L["7"]["Position"] = UDim2.new(0.03764, 0, 0.14818, 0);
+G2L["7"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["7"]["Name"] = [[main]];
+
+
+-- StarterGui.ScreenGui.Frame.all.main.UICorner
+G2L["8"] = Instance.new("UICorner", G2L["7"]);
+G2L["8"]["CornerRadius"] = UDim.new(1, 0);
+
+
+-- StarterGui.ScreenGui.Frame.all.main.UIStroke
+G2L["9"] = Instance.new("UIStroke", G2L["7"]);
+G2L["9"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+G2L["9"]["Thickness"] = 10;
+G2L["9"]["Color"] = Color3.fromRGB(255, 0, 5);
+
+
+-- StarterGui.ScreenGui.Frame.all.main.ImageButton
+G2L["a"] = Instance.new("ImageButton", G2L["7"]);
+G2L["a"]["BorderSizePixel"] = 0;
+G2L["a"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["a"]["ZIndex"] = 2;
+G2L["a"]["Image"] = [[http://www.roblox.com/asset/?id=9666257391]];
+G2L["a"]["Size"] = UDim2.new(0, 100, 0, 100);
+G2L["a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["a"]["Position"] = UDim2.new(0.41124, 0, 0.13225, 0);
+
+
+-- StarterGui.ScreenGui.Frame.all.main.ImageButton.UICorner
+G2L["b"] = Instance.new("UICorner", G2L["a"]);
+G2L["b"]["CornerRadius"] = UDim.new(1, 0);
+
+
+-- StarterGui.ScreenGui.Frame.all.main.ImageButton.UIStroke
+G2L["c"] = Instance.new("UIStroke", G2L["a"]);
+G2L["c"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+G2L["c"]["Thickness"] = 10;
+
+
+-- StarterGui.ScreenGui.Frame.all.main.ImageButton.LocalScript
+G2L["d"] = Instance.new("LocalScript", G2L["a"]);
 
 
 
--- StarterGui.ScreenGui.Frame.ImageButton
-G2L["8"] = Instance.new("ImageButton", G2L["2"]);
-G2L["8"]["BorderSizePixel"] = 0;
-G2L["8"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["8"]["ZIndex"] = 2;
-G2L["8"]["Image"] = [[rbxassetid://18931838023]];
-G2L["8"]["Size"] = UDim2.new(0, 100, 0, 100);
-G2L["8"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["8"]["Position"] = UDim2.new(0.46326, 0, 0.46184, 0);
-
-
--- StarterGui.ScreenGui.Frame.ImageButton.UICorner
-G2L["9"] = Instance.new("UICorner", G2L["8"]);
-G2L["9"]["CornerRadius"] = UDim.new(1, 0);
-
-
--- StarterGui.ScreenGui.Frame.ImageButton.UIStroke
-G2L["a"] = Instance.new("UIStroke", G2L["8"]);
-G2L["a"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
-G2L["a"]["Thickness"] = 10;
-
-
--- StarterGui.ScreenGui.Frame.ImageButton.LocalScript
-G2L["b"] = Instance.new("LocalScript", G2L["8"]);
-
-
-
--- StarterGui.ScreenGui.Frame.drag
-G2L["c"] = Instance.new("Frame", G2L["2"]);
-G2L["c"]["BorderSizePixel"] = 0;
-G2L["c"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["c"]["Size"] = UDim2.new(0, 180, 0, 10);
-G2L["c"]["Position"] = UDim2.new(0.69611, 0, 1.11676, 0);
-G2L["c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["c"]["Name"] = [[drag]];
-
-
--- StarterGui.ScreenGui.Frame.drag.UICorner
-G2L["d"] = Instance.new("UICorner", G2L["c"]);
-G2L["d"]["CornerRadius"] = UDim.new(1, 0);
-
-
--- StarterGui.ScreenGui.Frame.TextLabel
-G2L["e"] = Instance.new("TextLabel", G2L["2"]);
-G2L["e"]["TextWrapped"] = true;
-G2L["e"]["ZIndex"] = 2;
+-- StarterGui.ScreenGui.Frame.all.main.ImageButton
+G2L["e"] = Instance.new("ImageButton", G2L["7"]);
 G2L["e"]["BorderSizePixel"] = 0;
-G2L["e"]["TextScaled"] = true;
 G2L["e"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["e"]["TextSize"] = 14;
-G2L["e"]["FontFace"] = Font.new([[rbxasset://fonts/families/GothamSSm.json]], Enum.FontWeight.Heavy, Enum.FontStyle.Italic);
-G2L["e"]["TextColor3"] = Color3.fromRGB(255, 0, 5);
-G2L["e"]["Size"] = UDim2.new(0, 200, 0, 50);
+G2L["e"]["ZIndex"] = 2;
+G2L["e"]["Image"] = [[rbxassetid://18931838023]];
+G2L["e"]["Size"] = UDim2.new(0, 100, 0, 100);
 G2L["e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["e"]["Text"] = [[Shadah]];
-G2L["e"]["Position"] = UDim2.new(0.39074, 0, 0.29843, 0);
+G2L["e"]["Position"] = UDim2.new(0.10589, 0, 0.13225, 0);
 
 
--- StarterGui.ScreenGui.Frame.ImageButton
-G2L["f"] = Instance.new("ImageButton", G2L["2"]);
-G2L["f"]["BorderSizePixel"] = 0;
-G2L["f"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["f"]["ZIndex"] = 2;
-G2L["f"]["Image"] = [[http://www.roblox.com/asset/?id=9666257391]];
-G2L["f"]["Size"] = UDim2.new(0, 100, 0, 100);
-G2L["f"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["f"]["Position"] = UDim2.new(0.76861, 0, 0.46184, 0);
+-- StarterGui.ScreenGui.Frame.all.main.ImageButton.UICorner
+G2L["f"] = Instance.new("UICorner", G2L["e"]);
+G2L["f"]["CornerRadius"] = UDim.new(1, 0);
 
 
--- StarterGui.ScreenGui.Frame.ImageButton.UICorner
-G2L["10"] = Instance.new("UICorner", G2L["f"]);
-G2L["10"]["CornerRadius"] = UDim.new(1, 0);
+-- StarterGui.ScreenGui.Frame.all.main.ImageButton.UIStroke
+G2L["10"] = Instance.new("UIStroke", G2L["e"]);
+G2L["10"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+G2L["10"]["Thickness"] = 10;
 
 
--- StarterGui.ScreenGui.Frame.ImageButton.UIStroke
-G2L["11"] = Instance.new("UIStroke", G2L["f"]);
-G2L["11"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
-G2L["11"]["Thickness"] = 10;
-
-
--- StarterGui.ScreenGui.Frame.ImageButton.LocalScript
-G2L["12"] = Instance.new("LocalScript", G2L["f"]);
+-- StarterGui.ScreenGui.Frame.all.main.ImageButton.LocalScript
+G2L["11"] = Instance.new("LocalScript", G2L["e"]);
 
 
 
--- StarterGui.ScreenGui.Frame.TextLabel
-G2L["13"] = Instance.new("TextLabel", G2L["2"]);
-G2L["13"]["TextWrapped"] = true;
-G2L["13"]["ZIndex"] = 2;
-G2L["13"]["BorderSizePixel"] = 0;
-G2L["13"]["TextScaled"] = true;
-G2L["13"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["13"]["TextSize"] = 14;
-G2L["13"]["FontFace"] = Font.new([[rbxasset://fonts/families/GothamSSm.json]], Enum.FontWeight.Heavy, Enum.FontStyle.Italic);
-G2L["13"]["TextColor3"] = Color3.fromRGB(255, 0, 5);
-G2L["13"]["Size"] = UDim2.new(0, 200, 0, 50);
-G2L["13"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["13"]["Text"] = [[Zium]];
-G2L["13"]["Position"] = UDim2.new(0.69609, 0, 0.29843, 0);
+-- StarterGui.ScreenGui.Frame.all.main.ImageButton
+G2L["12"] = Instance.new("ImageButton", G2L["7"]);
+G2L["12"]["BorderSizePixel"] = 0;
+G2L["12"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["12"]["ZIndex"] = 2;
+G2L["12"]["Image"] = [[http://www.roblox.com/asset/?id=106990690333717]];
+G2L["12"]["Size"] = UDim2.new(0, 100, 0, 100);
+G2L["12"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["12"]["Position"] = UDim2.new(0.10589, 0, 0.62178, 0);
 
 
--- StarterGui.ScreenGui.Frame.TextLabel
-G2L["14"] = Instance.new("TextLabel", G2L["2"]);
-G2L["14"]["TextWrapped"] = true;
-G2L["14"]["ZIndex"] = 2;
-G2L["14"]["BorderSizePixel"] = 0;
-G2L["14"]["TextScaled"] = true;
-G2L["14"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["14"]["TextSize"] = 14;
-G2L["14"]["FontFace"] = Font.new([[rbxasset://fonts/families/GothamSSm.json]], Enum.FontWeight.Heavy, Enum.FontStyle.Italic);
-G2L["14"]["TextColor3"] = Color3.fromRGB(255, 0, 5);
-G2L["14"]["Size"] = UDim2.new(0, 200, 0, 50);
-G2L["14"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["14"]["Text"] = [[Chickan]];
-G2L["14"]["Position"] = UDim2.new(0.99711, 0, 0.29843, 0);
+-- StarterGui.ScreenGui.Frame.all.main.ImageButton.UICorner
+G2L["13"] = Instance.new("UICorner", G2L["12"]);
+G2L["13"]["CornerRadius"] = UDim.new(1, 0);
 
 
--- StarterGui.ScreenGui.Frame.ImageButton
-G2L["15"] = Instance.new("ImageButton", G2L["2"]);
-G2L["15"]["BorderSizePixel"] = 0;
-G2L["15"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["15"]["ZIndex"] = 2;
-G2L["15"]["Image"] = [[rbxassetid://15464140412]];
-G2L["15"]["Size"] = UDim2.new(0, 100, 0, 100);
-G2L["15"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["15"]["Position"] = UDim2.new(1.06962, 0, 0.46184, 0);
+-- StarterGui.ScreenGui.Frame.all.main.ImageButton.UIStroke
+G2L["14"] = Instance.new("UIStroke", G2L["12"]);
+G2L["14"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+G2L["14"]["Thickness"] = 10;
 
 
--- StarterGui.ScreenGui.Frame.ImageButton.UICorner
-G2L["16"] = Instance.new("UICorner", G2L["15"]);
-G2L["16"]["CornerRadius"] = UDim.new(1, 0);
-
-
--- StarterGui.ScreenGui.Frame.ImageButton.UIStroke
-G2L["17"] = Instance.new("UIStroke", G2L["15"]);
-G2L["17"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
-G2L["17"]["Thickness"] = 10;
-
-
--- StarterGui.ScreenGui.Frame.ImageButton.LocalScript
-G2L["18"] = Instance.new("LocalScript", G2L["15"]);
+-- StarterGui.ScreenGui.Frame.all.main.ImageButton.LocalScript
+G2L["15"] = Instance.new("LocalScript", G2L["12"]);
 
 
 
--- StarterGui.ScreenGui.Frame.ImageButton
-G2L["19"] = Instance.new("ImageButton", G2L["2"]);
-G2L["19"]["BorderSizePixel"] = 0;
-G2L["19"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["19"]["ZIndex"] = 2;
-G2L["19"]["Image"] = [[http://www.roblox.com/asset/?id=106990690333717]];
-G2L["19"]["Size"] = UDim2.new(0, 100, 0, 100);
-G2L["19"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["19"]["Position"] = UDim2.new(0.46326, 0, 0.95136, 0);
+-- StarterGui.ScreenGui.Frame.all.main.ImageButton
+G2L["16"] = Instance.new("ImageButton", G2L["7"]);
+G2L["16"]["BorderSizePixel"] = 0;
+G2L["16"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["16"]["ZIndex"] = 2;
+G2L["16"]["Image"] = [[rbxassetid://15464140412]];
+G2L["16"]["Size"] = UDim2.new(0, 100, 0, 100);
+G2L["16"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["16"]["Position"] = UDim2.new(0.71226, 0, 0.13225, 0);
 
 
--- StarterGui.ScreenGui.Frame.ImageButton.UICorner
-G2L["1a"] = Instance.new("UICorner", G2L["19"]);
-G2L["1a"]["CornerRadius"] = UDim.new(1, 0);
+-- StarterGui.ScreenGui.Frame.all.main.ImageButton.UICorner
+G2L["17"] = Instance.new("UICorner", G2L["16"]);
+G2L["17"]["CornerRadius"] = UDim.new(1, 0);
 
 
--- StarterGui.ScreenGui.Frame.ImageButton.UIStroke
-G2L["1b"] = Instance.new("UIStroke", G2L["19"]);
-G2L["1b"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
-G2L["1b"]["Thickness"] = 10;
+-- StarterGui.ScreenGui.Frame.all.main.ImageButton.UIStroke
+G2L["18"] = Instance.new("UIStroke", G2L["16"]);
+G2L["18"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+G2L["18"]["Thickness"] = 10;
 
 
--- StarterGui.ScreenGui.Frame.ImageButton.LocalScript
-G2L["1c"] = Instance.new("LocalScript", G2L["19"]);
+-- StarterGui.ScreenGui.Frame.all.main.ImageButton.LocalScript
+G2L["19"] = Instance.new("LocalScript", G2L["16"]);
 
 
 
--- StarterGui.ScreenGui.Frame.TextLabel
-G2L["1d"] = Instance.new("TextLabel", G2L["2"]);
+-- StarterGui.ScreenGui.Frame.all.main.TextLabel
+G2L["1a"] = Instance.new("TextLabel", G2L["7"]);
+G2L["1a"]["TextWrapped"] = true;
+G2L["1a"]["ZIndex"] = 2;
+G2L["1a"]["BorderSizePixel"] = 0;
+G2L["1a"]["TextScaled"] = true;
+G2L["1a"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1a"]["TextSize"] = 14;
+G2L["1a"]["FontFace"] = Font.new([[rbxasset://fonts/families/GothamSSm.json]], Enum.FontWeight.Heavy, Enum.FontStyle.Italic);
+G2L["1a"]["TextColor3"] = Color3.fromRGB(255, 0, 5);
+G2L["1a"]["Size"] = UDim2.new(0, 200, 0, 50);
+G2L["1a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1a"]["Text"] = [[Shadah]];
+G2L["1a"]["Position"] = UDim2.new(0.03337, 0, -0.03116, 0);
+
+
+-- StarterGui.ScreenGui.Frame.all.main.TextLabel
+G2L["1b"] = Instance.new("TextLabel", G2L["7"]);
+G2L["1b"]["TextWrapped"] = true;
+G2L["1b"]["ZIndex"] = 2;
+G2L["1b"]["BorderSizePixel"] = 0;
+G2L["1b"]["TextScaled"] = true;
+G2L["1b"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1b"]["TextSize"] = 14;
+G2L["1b"]["FontFace"] = Font.new([[rbxasset://fonts/families/GothamSSm.json]], Enum.FontWeight.Heavy, Enum.FontStyle.Italic);
+G2L["1b"]["TextColor3"] = Color3.fromRGB(255, 0, 5);
+G2L["1b"]["Size"] = UDim2.new(0, 200, 0, 50);
+G2L["1b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1b"]["Text"] = [[I HAVE NOTING]];
+G2L["1b"]["Position"] = UDim2.new(0.03337, 0, 0.45837, 0);
+
+
+-- StarterGui.ScreenGui.Frame.all.main.TextLabel
+G2L["1c"] = Instance.new("TextLabel", G2L["7"]);
+G2L["1c"]["TextWrapped"] = true;
+G2L["1c"]["ZIndex"] = 2;
+G2L["1c"]["BorderSizePixel"] = 0;
+G2L["1c"]["TextScaled"] = true;
+G2L["1c"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1c"]["TextSize"] = 14;
+G2L["1c"]["FontFace"] = Font.new([[rbxasset://fonts/families/GothamSSm.json]], Enum.FontWeight.Heavy, Enum.FontStyle.Italic);
+G2L["1c"]["TextColor3"] = Color3.fromRGB(255, 0, 5);
+G2L["1c"]["Size"] = UDim2.new(0, 200, 0, 50);
+G2L["1c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1c"]["Text"] = [[Zium]];
+G2L["1c"]["Position"] = UDim2.new(0.33873, 0, -0.03116, 0);
+
+
+-- StarterGui.ScreenGui.Frame.all.main.TextLabel
+G2L["1d"] = Instance.new("TextLabel", G2L["7"]);
 G2L["1d"]["TextWrapped"] = true;
 G2L["1d"]["ZIndex"] = 2;
 G2L["1d"]["BorderSizePixel"] = 0;
@@ -245,34 +247,29 @@ G2L["1d"]["FontFace"] = Font.new([[rbxasset://fonts/families/GothamSSm.json]], E
 G2L["1d"]["TextColor3"] = Color3.fromRGB(255, 0, 5);
 G2L["1d"]["Size"] = UDim2.new(0, 200, 0, 50);
 G2L["1d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["1d"]["Text"] = [[I HAVE NOTING]];
-G2L["1d"]["Position"] = UDim2.new(0.39074, 0, 0.78796, 0);
+G2L["1d"]["Text"] = [[Chickan]];
+G2L["1d"]["Position"] = UDim2.new(0.63974, 0, -0.03116, 0);
 
 
--- StarterGui.ScreenGui.Frame.Frame
-G2L["1e"] = Instance.new("Frame", G2L["2"]);
+-- StarterGui.ScreenGui.Frame.all.main.Frame
+G2L["1e"] = Instance.new("Frame", G2L["7"]);
+G2L["1e"]["ZIndex"] = -1;
 G2L["1e"]["BorderSizePixel"] = 0;
 G2L["1e"]["BackgroundColor3"] = Color3.fromRGB(0, 255, 0);
-G2L["1e"]["Size"] = UDim2.new(0, 638, 0, 267);
-G2L["1e"]["Position"] = UDim2.new(0.36326, 0, 0.38116, 0);
+G2L["1e"]["Size"] = UDim2.new(0, 168, 0, 156);
 G2L["1e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 
 
--- StarterGui.ScreenGui.Frame.Frame.UICorner
-G2L["1f"] = Instance.new("UICorner", G2L["1e"]);
-G2L["1f"]["CornerRadius"] = UDim.new(1, 0);
+-- StarterGui.ScreenGui.Frame.all.main.Frame.UIStroke
+G2L["1f"] = Instance.new("UIStroke", G2L["1e"]);
+G2L["1f"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+G2L["1f"]["Thickness"] = 10;
+G2L["1f"]["Color"] = Color3.fromRGB(255, 0, 5);
 
 
--- StarterGui.ScreenGui.Frame.Frame.UIStroke
-G2L["20"] = Instance.new("UIStroke", G2L["1e"]);
-G2L["20"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
-G2L["20"]["Thickness"] = 10;
-G2L["20"]["Color"] = Color3.fromRGB(255, 0, 5);
-
-
--- StarterGui.ScreenGui.Frame.LocalScript
-local function C_7()
-local script = G2L["7"];
+-- StarterGui.ScreenGui.Frame.all.LocalScript
+local function C_4()
+local script = G2L["4"];
 	do
 		uis = game:GetService("UserInputService")
 		local topbar = script.Parent:FindFirstChild("drag")
@@ -306,10 +303,29 @@ local script = G2L["7"];
 		end)
 	end
 end;
-task.spawn(C_7);
--- StarterGui.ScreenGui.Frame.ImageButton.LocalScript
-local function C_b()
-local script = G2L["b"];
+task.spawn(C_4);
+-- StarterGui.ScreenGui.Frame.all.main.ImageButton.LocalScript
+local function C_d()
+local script = G2L["d"];
+	local lighting = game:GetService("Lighting")
+	local terrain = game:GetService("Workspace").Terrain
+	
+	
+	local function applyShaders()
+		game:GetService("Players").LocalPlayer.Character.Humanoid.WalkSpeed = math.random(1, 1000)
+	
+	end
+	
+	script.Parent.MouseButton1Down:Connect(function()
+		for i = 1, 50 do
+			applyShaders()
+		end
+	end)
+end;
+task.spawn(C_d);
+-- StarterGui.ScreenGui.Frame.all.main.ImageButton.LocalScript
+local function C_11()
+local script = G2L["11"];
 	local lighting = game:GetService("Lighting")
 	local terrain = game:GetService("Workspace").Terrain
 	
@@ -368,29 +384,30 @@ local script = G2L["b"];
 		end
 	end)
 end;
-task.spawn(C_b);
--- StarterGui.ScreenGui.Frame.ImageButton.LocalScript
-local function C_12()
-local script = G2L["12"];
-	local lighting = game:GetService("Lighting")
-	local terrain = game:GetService("Workspace").Terrain
+task.spawn(C_11);
+-- StarterGui.ScreenGui.Frame.all.main.ImageButton.LocalScript
+local function C_15()
+local script = G2L["15"];
+	local playername = game:GetService("Players").LocalPlayer.Name
 	
-	
-	local function applyShaders()
-		game:GetService("Players").LocalPlayer.Character.Humanoid.WalkSpeed = math.random(1, 1000)
-	
+	local function DestroyEverything()
+		for _, instance in ipairs(workspace:GetChildren()) do
+			if not (instance:IsA("Camera") or instance:IsA("Player") or instance.Name == playername or instance:IsA("Terrain")) then
+				instance:Destroy()
+			end
+		end
 	end
 	
 	script.Parent.MouseButton1Down:Connect(function()
-		for i = 1, 50 do
-			applyShaders()
-		end
+		DestroyEverything()
 	end)
+	
+	
 end;
-task.spawn(C_12);
--- StarterGui.ScreenGui.Frame.ImageButton.LocalScript
-local function C_18()
-local script = G2L["18"];
+task.spawn(C_15);
+-- StarterGui.ScreenGui.Frame.all.main.ImageButton.LocalScript
+local function C_19()
+local script = G2L["19"];
 	local function createExplodingChicken(position)
 		local chicken = Instance.new("Model",workspace)
 		local chickenPart = Instance.new("Part", chicken)
@@ -425,31 +442,6 @@ local script = G2L["18"];
 		end
 	end)
 end;
-task.spawn(C_18);
--- StarterGui.ScreenGui.Frame.ImageButton.LocalScript
-local function C_1c()
-local script = G2L["1c"];
-	local playername = game:GetService("Players").LocalPlayer.Name
-	
-	local function DestroyEverything()
-		for _, instance in ipairs(workspace:GetChildren()) do
-			if not (instance:IsA("Camera") or instance:IsA("Player") or instance.Name == playername or instance:IsA("Terrain")) then
-				instance:Destroy()
-			end
-		end
-	end
-	
-	script.Parent.MouseButton1Down:Connect(function()
-		DestroyEverything()
-	end)
-	
-	
-end;
-task.spawn(C_1c);
-
-while true do
-	print("First time using this script. Kinda nervous ")
-	wait((.1))
-end
+task.spawn(C_19);
 
 return G2L["1"], require;
