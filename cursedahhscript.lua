@@ -46,8 +46,8 @@ G2L["5"] = Instance.new("Frame", G2L["3"]);
 G2L["5"]["BorderSizePixel"] = 0;
 G2L["5"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["5"]["AnchorPoint"] = Vector2.new(0.5, 1);
-G2L["5"]["Size"] = UDim2.new(0, 180, 0, 10);
-G2L["5"]["Position"] = UDim2.new(0.17438, 0, 0.76702, 0);
+G2L["5"]["Size"] = UDim2.new(0.2, 0, 0.05, 0);
+G2L["5"]["Position"] = UDim2.new(0.5, 0, 1.1, 0);
 G2L["5"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["5"]["Name"] = [[drag]];
 
@@ -61,8 +61,7 @@ G2L["6"]["CornerRadius"] = UDim.new(1, 0);
 G2L["7"] = Instance.new("Frame", G2L["3"]);
 G2L["7"]["BorderSizePixel"] = 0;
 G2L["7"]["BackgroundColor3"] = Color3.fromRGB(0, 255, 0);
-G2L["7"]["Size"] = UDim2.new(0, 638, 0, 267);
-G2L["7"]["Position"] = UDim2.new(0.03764, 0, 0.14818, 0);
+G2L["7"]["Size"] = UDim2.new(1, 0, 1, 0);
 G2L["7"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["7"]["Name"] = [[main]];
 
@@ -87,7 +86,7 @@ G2L["a"]["ZIndex"] = 2;
 G2L["a"]["Image"] = [[http://www.roblox.com/asset/?id=9666257391]];
 G2L["a"]["Size"] = UDim2.new(0, 100, 0, 100);
 G2L["a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["a"]["Position"] = UDim2.new(0.41124, 0, 0.13225, 0);
+G2L["a"]["Position"] = UDim2.new(0.37663, 0, 0.16123, 0);
 
 
 -- StarterGui.ScreenGui.Frame.all.main.ImageButton.UICorner
@@ -114,7 +113,7 @@ G2L["e"]["ZIndex"] = 2;
 G2L["e"]["Image"] = [[rbxassetid://18931838023]];
 G2L["e"]["Size"] = UDim2.new(0, 100, 0, 100);
 G2L["e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["e"]["Position"] = UDim2.new(0.10589, 0, 0.13225, 0);
+G2L["e"]["Position"] = UDim2.new(0.07127, 0, 0.16123, 0);
 
 
 -- StarterGui.ScreenGui.Frame.all.main.ImageButton.UICorner
@@ -141,7 +140,7 @@ G2L["12"]["ZIndex"] = 2;
 G2L["12"]["Image"] = [[http://www.roblox.com/asset/?id=106990690333717]];
 G2L["12"]["Size"] = UDim2.new(0, 100, 0, 100);
 G2L["12"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["12"]["Position"] = UDim2.new(0.10589, 0, 0.62178, 0);
+G2L["12"]["Position"] = UDim2.new(0.38133, 0, 0.66656, 0);
 
 
 -- StarterGui.ScreenGui.Frame.all.main.ImageButton.UICorner
@@ -168,7 +167,7 @@ G2L["16"]["ZIndex"] = 2;
 G2L["16"]["Image"] = [[rbxassetid://15464140412]];
 G2L["16"]["Size"] = UDim2.new(0, 100, 0, 100);
 G2L["16"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["16"]["Position"] = UDim2.new(0.71226, 0, 0.13225, 0);
+G2L["16"]["Position"] = UDim2.new(0.67764, 0, 0.16123, 0);
 
 
 -- StarterGui.ScreenGui.Frame.all.main.ImageButton.UICorner
@@ -200,7 +199,7 @@ G2L["1a"]["TextColor3"] = Color3.fromRGB(255, 0, 5);
 G2L["1a"]["Size"] = UDim2.new(0, 200, 0, 50);
 G2L["1a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["1a"]["Text"] = [[Shadah]];
-G2L["1a"]["Position"] = UDim2.new(0.03337, 0, -0.03116, 0);
+G2L["1a"]["Position"] = UDim2.new(-0.00125, 0, -0.00218, 0);
 
 
 -- StarterGui.ScreenGui.Frame.all.main.TextLabel
@@ -216,7 +215,7 @@ G2L["1b"]["TextColor3"] = Color3.fromRGB(255, 0, 5);
 G2L["1b"]["Size"] = UDim2.new(0, 200, 0, 50);
 G2L["1b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["1b"]["Text"] = [[I HAVE NOTING]];
-G2L["1b"]["Position"] = UDim2.new(0.03337, 0, 0.45837, 0);
+G2L["1b"]["Position"] = UDim2.new(0.30881, 0, 0.50315, 0);
 
 
 -- StarterGui.ScreenGui.Frame.all.main.TextLabel
@@ -232,7 +231,7 @@ G2L["1c"]["TextColor3"] = Color3.fromRGB(255, 0, 5);
 G2L["1c"]["Size"] = UDim2.new(0, 200, 0, 50);
 G2L["1c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["1c"]["Text"] = [[Zium]];
-G2L["1c"]["Position"] = UDim2.new(0.33873, 0, -0.03116, 0);
+G2L["1c"]["Position"] = UDim2.new(0.30411, 0, -0.00218, 0);
 
 
 -- StarterGui.ScreenGui.Frame.all.main.TextLabel
@@ -248,7 +247,7 @@ G2L["1d"]["TextColor3"] = Color3.fromRGB(255, 0, 5);
 G2L["1d"]["Size"] = UDim2.new(0, 200, 0, 50);
 G2L["1d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["1d"]["Text"] = [[Chickan]];
-G2L["1d"]["Position"] = UDim2.new(0.63974, 0, -0.03116, 0);
+G2L["1d"]["Position"] = UDim2.new(0.60512, 0, -0.00218, 0);
 
 
 -- StarterGui.ScreenGui.Frame.all.main.Frame
